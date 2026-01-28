@@ -1,19 +1,17 @@
-
-
 ## Scena 1: Uvodna scena
-![Scena 1](images/scena-01.png)
+![Scena 1](scena-01.png)
 
 **Opis:**  
 Rudar v jami
 
 ## Scena 2: Glavna interakcija
-![Scena 2](images/scena-02.png)
+![Scena 2](scena-02.png)
 
 **Opis:**  
-Hodis kot rudar po jami, si ogledujes plakate o zanimivosti rudnika
+Hodiš kot rudar po jami, si ogleduješ plakate o zanimivostih rudnika.
 
 ## Scena 3: Zaključek / rezultat
-![Scena 3](images/scena-03.png)
+![Scena 3](scena-03.png)
 
 **Opis:**  
-Na koncu tunela oz. jaame lahko s krampom kopaš
+Na koncu tunela oziroma jame lahko s krampom kopaš.
