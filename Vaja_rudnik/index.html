@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Premogovnik Velenje AR & Fallback Portal</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- Main Menu UI -->
+    <div id="ui-container">
+      <h1>Velenje Coal Mine</h1>
+      <p id="ar-instructions">Pomaknite kamero proti tlom in skenirajte površino za AR portal.</p>
+      
+      <!-- Fallback button area -->
+      <div style="margin-top: 40px;">
+        <button id="btn-fallback">Zagon v 3D Načinu (Glej naokoli s prstom)</button>
+        <button id="btn-usdz" style="margin-top: 15px; background: #000; color: #fff; border: 2px solid #fff;">Odpri v AR na iPhonu (.usdz)</button>
+        <p style="font-size: 0.9rem; opacity: 0.7; margin-top:10px;">Če gumb WEBXR NOT AVAILABLE ne deluje na vaši napravi, uporabite zgornji 3D način ali prenesite USDZ.</p>
+      </div>
+    </div>
+
+    <!-- Fallback Controller UI (Hidden by default) -->
+    <div id="fallback-ui" style="display: none;">
+      <div class="dpad-container">
+        <button id="btn-forward" class="dpad-btn dpad-up" aria-label="Naprej">▲</button>
+        <div class="dpad-middle">
+          <button id="btn-left" class="dpad-btn dpad-left" aria-label="Levo">◀</button>
+          <div class="dpad-center-hole"></div>
+          <button id="btn-right" class="dpad-btn dpad-right" aria-label="Desno">▶</button>
+        </div>
+        <button id="btn-backward" class="dpad-btn dpad-down" aria-label="Nazaj">▼</button>
+      </div>
+      <button id="btn-hit" class="hit-btn">⚒ Udari</button>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

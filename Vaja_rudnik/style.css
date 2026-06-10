@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+  font-family: sans-serif;
+  touch-action: none; /* Disable native scroll for drag to look */
+}
+
+#ui-container {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  z-index: 10;
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.8);
+  width: 90%;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  pointer-events: none;
+}
+
+p {
+  font-size: 1.1rem;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+#btn-fallback {
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #555;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#ARButton {
+  position: absolute !important;
+  bottom: 20px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 20;
+  padding: 12px 24px !important;
+  font-size: 18px !important;
+  background-color: #fca311 !important;
+  color: #000 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  font-weight: bold !important;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3) !important;
+}
+
+/* Fallback In-Game UI */
+#fallback-ui {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Let drag pass through */
+  z-index: 5;
+}
+
+.dpad-container {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: 160px;
+  height: 160px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  pointer-events: auto;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+}
+
+.dpad-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.15s, transform 0.1s, border-color 0.15s;
+  user-select: none;
+}
+
+.dpad-btn:active {
+  background: rgba(255, 255, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: scale(0.92);
+}
+
+.dpad-middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dpad-center-hole {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.3);
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.hit-btn {
+  position: absolute;
+  bottom: 40px;
+  right: 30px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(252, 163, 17, 0.5) 0%, rgba(229, 142, 38, 0.3) 100%);
+  border: 2px solid #fca311;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  pointer-events: auto;
+  box-shadow: 0 8px 32px 0 rgba(252, 163, 17, 0.2), 0 0 15px rgba(252, 163, 17, 0.3);
+  transition: all 0.2s ease;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hit-btn:active {
+  background: radial-gradient(circle, rgba(252, 163, 17, 0.9) 0%, rgba(229, 142, 38, 0.7) 100%);
+  transform: scale(0.9);
+  box-shadow: 0 4px 16px 0 rgba(252, 163, 17, 0.4);
+}
+
